@@ -1,0 +1,14 @@
+npm install bootstrap @popperjs/core
+
+resources/css/app.css:
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+resources/js/app.css:
+import 'bootstrap';
+
+
+npm run dev
+
+npm run build
+
+
