@@ -10,6 +10,8 @@ new class extends Component
 
     public function mount(){
         $this->hours = Carbon::now()->hour;
+        // $this->date = Carbon::now()->format('F-d-y');
+
         if($this->hours < 13){
             $this->greeting = "Good Morning";
         }
