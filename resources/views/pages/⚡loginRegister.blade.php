@@ -55,7 +55,7 @@ new #[Layout('layouts::login_layout')] class extends Component
         return redirect()->intended('/');
     }
     else{
-      return redirect(url('/dashboard'));
+        $this->dispatch('error',message: 'something went wrong');
     }
   }
 
@@ -439,6 +439,12 @@ new #[Layout('layouts::login_layout')] class extends Component
 
     $wire.on('success', (event) => {
         console.log('SUCCESS EVENT:', event);
+
+        alert(event.message);
+    });
+
+     $wire.on('error', (event) => {
+        console.log('ERROR EVENT:', event);
 
         alert(event.message);
     });
