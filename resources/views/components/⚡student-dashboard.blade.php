@@ -6,11 +6,11 @@ use Carbon\Carbon;
 new class extends Component
 {
     //
-    public $hours, $greeting;
+    public $hours, $greeting, $date;
 
     public function mount(){
         $this->hours = Carbon::now()->hour;
-        // $this->date = Carbon::now()->format('F-d-y');
+        $this->date = Carbon::now()->format('d-F-y');
 
         if($this->hours < 13){
             $this->greeting = "Good Morning";
@@ -501,7 +501,8 @@ new class extends Component
 
                 <div>
                     <h6 class="fw-bold mb-1">Student Portal</h6>
-                    <small class="muted">Academic Year 2026–27</small>
+                    <small class="muted">Academic Year 2026–27</small><br>
+                    <small class="fw-bold text-primary">{{$date}}</small>
                 </div>
 
                 <div class="d-flex align-items-center gap-3">
@@ -532,10 +533,6 @@ new class extends Component
                         Welcome back! Here's your academic overview.
                     </p>
                 </div>
-
-                <span class="badge bg-white text-secondary border p-3">
-                    📅 &nbsp; Academic Year 2026–27
-                </span>
             </div>
 
             <!-- WELCOME BANNER -->
