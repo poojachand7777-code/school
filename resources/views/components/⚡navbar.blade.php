@@ -167,11 +167,11 @@ new class extends Component
 
                 
                 @else
-                    <a href="{{url('/loginRegister')}}" class="btn btn-outline-primary btn-sm px-3" wire:navigate>
+                    <!-- <a href="{{url('/loginRegister')}}" class="btn btn-outline-primary btn-sm px-3" wire:navigate>
                         Login/Register
-                    </a>
+                    </a> -->
 
-                    <a href="{{url('/login')}}" class="btn btn-primary btn-sm px-3" wire:navigate>
+                    <a href="{{url('/loginRegister')}}" class="btn btn-primary btn-sm px-3" wire:navigate>
                         Apply Now
                     </a>
                 @endauth
