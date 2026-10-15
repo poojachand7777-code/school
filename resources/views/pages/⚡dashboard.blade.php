@@ -10,6 +10,13 @@ new #[Layout('layouts::login_layout')] class extends Component
 ?>
 
 <div>
-    Walk as if you are kissing the Earth with your feet. - Thich Nhat Hanh 
+    @auth
+    @if(!Auth::user()->role)
     <livewire:student-dashboard/>
+    @elseif(Auth::user()->role=="admin")
+    <livewire:admin.dashboard/>
+    @endif
+    
+    @endauth
+
 </div>

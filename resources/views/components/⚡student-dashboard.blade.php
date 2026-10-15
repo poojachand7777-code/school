@@ -482,13 +482,14 @@ new class extends Component
 
         <nav class="nav flex-column">
             <a class="nav-link active" href="{{url('/dashboard')}}">▦ &nbsp; Dashboard</a>
-            <a class="nav-link" href="{{url('/dashboard')}}"">▤ &nbsp; My Timetable</a>
-            <a class="nav-link" href="{{url('/dashboard')}}"">✎ &nbsp; Assignments</a>
-            <a class="nav-link" href="{{url('/dashboard')}}"">▥ &nbsp; Results & Marks</a>
-            <a class="nav-link" href="{{url('/dashboard')}}"">◷ &nbsp; Attendance</a>
-            <a class="nav-link" href="{{url('/dashboard')}}"">₹ &nbsp; Fee Details</a>
-            <a class="nav-link" href="{{url('/dashboard')}}"">♧ &nbsp; Announcements</a>
-            <a class="nav-link" href="{{url('/dashboard')}}"">⚙ &nbsp; My Profile</a>
+            <a class="nav-link" href="{{url('/dashboard')}}">▤ &nbsp; My Timetable</a>
+            <a class="nav-link" href="{{url('/dashboard')}}">✎ &nbsp; Assignments</a>
+            <a class="nav-link" href="{{url('/dashboard')}}">▥ &nbsp; Results & Marks</a>
+            <a class="nav-link" href="{{url('/dashboard')}}">◷ &nbsp; Attendance</a>
+            <a class="nav-link" href="{{url('/dashboard')}}">₹ &nbsp; Fee Details</a>
+            <a class="nav-link" href="{{url('/dashboard')}}">♧ &nbsp; Announcements</a>
+            <a class="nav-link" href="{{url('/dashboard')}}">⚙ &nbsp; My Profile</a>
+             <a class="nav-link  text-danger" href="{{url('/logout')}}">Logout</a>
         </nav>
     </aside>
 

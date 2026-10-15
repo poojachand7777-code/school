@@ -9,6 +9,7 @@ Route::livewire('/', 'pages::home');
 // Route::livewire('/login', 'pages::login');
 Route::livewire('/loginRegister', 'pages::loginRegister');
 Route::livewire('/dashboard', 'pages::dashboard');
+Route::livewire('/classes', 'pages::classes');
 
 Route::get('/logout', function(Request $request){
 
